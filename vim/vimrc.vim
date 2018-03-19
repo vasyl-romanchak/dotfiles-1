@@ -39,6 +39,11 @@
 	set mouse=a
 	set incsearch
 
+" Plugins
+	if filereadable(expand("~/dotfiles/vim/vimrc.plugins.vim"))
+	  source ~/dotfiles/vim/vimrc.plugins.vim
+	endif
+
 " Language Specific
 	" General
 		inoremap <leader>for <esc>Ifor (int i = 0; i < <esc>A; i++) {<enter>}<esc>O<tab>
